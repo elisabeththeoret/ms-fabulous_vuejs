@@ -1,0 +1,74 @@
+/* ---------- VARIABLES ---------- */
+html {
+    --font-poiret: 'Poiret One', cursive;
+    --font-bitter: 'Bitter', serif;
+}
+
+
+/* ---------- FONT FAMILY ---------- */
+html {
+    font-family: var(--font-bitter);
+}
+
+h1, h2 {
+    font-family: var(--font-poiret);
+}
+
+p, a, button, small, span {
+    font-family: inherit;
+}
+
+form, label, input, select, textarea {
+    font-family: inherit;
+}
+
+/* ---------- TITLES ---------- */
+h1 {
+    font-size: 4em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+h5 {
+    font-size: .9375em;
+    font-weight: 600;
+}
+
+/* ---------- AUTRES ---------- */
+p {
+    max-width: 100ch;
+}
+
+span {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+a, button {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* ---------- FORM ---------- */
+label {
+    font-size: 1.25em;
+}
+
+input, textarea {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}

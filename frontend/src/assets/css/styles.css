@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+@import './styles/colors.css';
+@import './styles/typography.css';
+@import './styles/utilities.css';
+
+
+/* ------------------------------ 
+GENERIQUE 
+------------------------------ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- BASE - HERITAGE ---------- */
+html {
+    font-size: 18px;
+    line-height: 1.625;
+    font-weight: 300;
+    color: var(--marron);
+    background-color: #FCFCFB;
+}
+
+#root {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- TITLES ---------- */
+h2:has(~ *) {
+    margin-bottom: 30px;
+}
+
+h3:has(~ *) {
+    margin-bottom: 20px;
+}
+
+h4:has(~ *) {
+    margin-bottom: 10px;
+}
+
+/* ---------- LIENS ET BOUTONS ---------- */
+a {
+    display: flex;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+}
+
+a, 
+button {
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover, 
+button:hover {
+    cursor: pointer;
+    color: var(--dark_marron);
+}
+
+a:hover {
+    text-underline-offset: 7px;
+}
+
+/* ---------- BUTTON - BOX EFFECT ---------- */
+.btn {
+    font-weight: 600;
+    border: 2px solid var(--light_vert);
+    border-radius: 40vh;
+    padding: 12px 25px;
+    max-width: max-content;
+    text-decoration: none;
+    
+    box-shadow: inset 0 0 0 0 var(--rosemauve);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: inset 0 -200px 0 0 var(--light_vert);
+}
+
+/* ---------- ICON ---------- */
+i {
+    display: flex;
+    font-size: 1em;
+    line-height: inherit;
+}
+
+/* Close X Icon */
+.close-x-icon {
+    position: absolute;
+    font-size: 1.75em;
+    right: 20px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.close-x-icon:hover {
+    font-size: 1.9375em;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+/* ------------------------------ 
+APP CONTENT 
+------------------------------ */
+.app {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.app > * {
+    padding: 60px 40px;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+    position: sticky;
+    top: 0;
+    height: 65px;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header {
+    border-bottom: 1px solid var(--dark_marron);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* ---------- NAV PRINCIPALE ---------- */
+.nav-principale {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-principale a,
+.nav-principale button {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+}
+
+.nav-principale a:hover,
+.nav-principale button:hover {
+    color: var(--white);
+    box-shadow: inset 0 -200px 0 0 var(--dark_marron);
+}
+
+.nav-principale .btn-cart {
+    background-color: var(--rosemauve);
+    box-shadow: inset 0 0 0 0 var(--light_vert);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.nav-principale .btn-cart:hover {
+    box-shadow: inset 0 -200px 0 0 var(--dark_marron);
+}
+
+/* Logo */
+.nav-principale .logo {
+    font-family: var(--font-poiret);
+    font-size: 1.375em;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav-principale .logo.btn {
+    color: var(--rosemauve);
+    background-color: var(--marron);
+    box-shadow: inset 0 0 0 0 var(--light_rosemauve);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.nav-principale .logo.btn:hover {
+    box-shadow: inset 400px 0 0 0 var(--dark_marron);
+}
+
+/* ---------- CART ---------- */
+.cart-container {
+    position: fixed;
+    top: 65px;
+    right: 0;
+    width: 500px;
+    height: calc(100vh - 65px);
+}
+
+/* Espacements */
+.cart-container > * {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.cart-header {
+    padding-top: 40px;
+}
+.cart-footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* Cart Body */
+.cart-body {
+    height: calc(100% - 300px);
+    overflow: hidden;
+}
+
+/* Cart Footer */
+.cart-footer {
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    z-index: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: var(--light_marron);
+}
+
+.cart-footer :first-child {
+    width: 100%;
+}
+
+/* Bouton Fermer */
+.cart-close {
+    position: absolute;
+    right: 40px;
+}
+.cart-header .icon:hover {
+    color: var(--rosemauve);
+}
+
+/* Titre */
+.cart-header h2 {
+    text-transform: uppercase;
+    font-size: 2.25em;
+}
+
+.cart-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid var(--marron);
+    border-bottom: 1px solid var(--marron);
+}
+.cart-item > div {
+    flex: 1;
+}
+
+.cart-item img {
+    max-width: 5vw;
+}
+
+/* ---------- SECTION PRINCIPALE (HEADER) ---------- */
+.app > header {
+    gap: 20px;
+    padding: 140px 40px 80px 40px;
+}
+
+.app > header {
+    gap: 30px;
+    align-items: center;
+}
+
+.app > header p {
+    text-align: center;
+    max-width: 60ch;
+}
+
+.app > header .btn {
+    margin-top: 30px;
+}
+
+/* ---------- BOITE ---------- */
+.boite {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.boite-content {
+    position: relative;
+}
+
+.boite-img {
+    position: absolute;
+}
+
+.boite span {
+    padding-top: 30px;
+}
+/* ---------- FORM ---------- */
+form {
+    width: 100%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input, 
+textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 20px;
+}
+
+.form-control input {
+    background-color: var(--white);
+}
+
+textarea {
+    resize: none;
+    flex: 1;
+}
+
+*:focus,
+*:focus-visible {
+    outline: none;
+    transition: 200ms ease-in-out;
+    border-color: var(--light_vert);
+}
+
+/* Navigation du formulaire */
+form nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bouton de soumission */
+.btn-submit {
+    color: var(--white);
+    background-color: transparent;
+    border-color: var(--marron);
+    box-shadow: inset 0 200px 0 0 var(--marron);
+    cursor: pointer;
+}
+.btn-submit:hover {
+    color: var(--marron);
+    box-shadow: inset 0 0 0 0 var(--rosemauve);
+}
+
+/* Champ et boutons de quantité */
+.pastry-qte {
+    max-width: max-content;
+    border: 1px solid var(--marron);
+    border-radius: 50vh;
+}
+
+.pastry-qte > .btn {
+    max-width: unset;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+}
+.pastry-qte > .btn:hover {
+    border-color: var(--light_vert);
+    color: var(--light_vert);
+}
+
+/* ---------- PASTRY VIEW PAGE ---------- */
+.pastry-view img {
+    max-width: 60vw;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    margin-top: auto;
+    background-color: var(--light_marron);
+    bottom: 0;
+}

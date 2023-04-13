@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Croissant",
+    "category": "Croissants & Co.",
+    "description": "Croissant 100% pur beurre, roulé à la main par nos artisans touriers. Cette pâte est poussée et levée tous les jours pour ensuite être cuite à la perfection.",
+    "price": "12.00",
+    "photo": "croissants.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Millefeuilles individuels",
+    "category": "Classiques",
+    "description": "Nos délicieux millefeuilles sont préparés avec soin à partir de pâte feuilletée et de crème pâtissière ou de crème fouettée entre les étages. Le dessus est garni d’un doux fondant à la vanille. Ils sont un dessert qui fera le bonheur des dents sucrées.",
+    "price": "28.50",
+    "photo": "millefeuilles-individuels.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Meringues",
+    "category": "Classiques",
+    "description": "Décorez vos desserts favoris ou concassez ces délicates meringues sur de la crème glacée.",
+    "price": "10.50",
+    "photo": "meringues.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Brioche Assiette Pommes",
+    "category": "Croissants & Co.",
+    "description": "Brioche familiale à saveur de pommes à partager.",
+    "price": "6.50",
+    "photo": "briche-assiette-pommes.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Gâteau St-Honoré",
+    "category": "Gâteaux sur mesure",
+    "description": "Classique de la pâtisserie française à son meilleur, sur une base de pâte feuilletée amalgamée à une pâte à chou,vous retrouverez une onctueuse crème pâtissière vanillée surmontée d'une crème fouettée, en son centre une salade de fruits maison. Ce gâteau est garni de copeaux de chocolat noir ainsi que de cerises au marasquin.",
+    "price": "29.00",
+    "photo": "gateau-st-honore.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Éclairs",
+    "category": "Classiques",
+    "description": "Les éclairs sont un excellent dessert français, à base de pâte à choux, fourrés de crème fouettée ou de crème pâtissière et recouverts d’un délicieux fondant au chocolat. La touche parfaite pour terminer votre repas en douceur.",
+    "price": "26.10",
+    "photo": "eclairs.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Tarte aux bleuets",
+    "category": "Tartes",
+    "description": "Tarte aux bleuets plus bleue que nature. Goûtez le vrai!",
+    "price": "9.95",
+    "photo": "tarte-aux-bleuets.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Chocolatine",
+    "category": "Croissants & Co.",
+    "description": "Pâte à croissant 100% pur beurre garnie de chocolat noir bâton. C'est le délice des grands comme des petits!",
+    "price": "16.00",
+    "photo": "chocolatines.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Chausson aux pommes",
+    "category": "Croissants & Co.",
+    "description": "Nos chaussons aux pommes sont faits à partir de pâte feuilletée, sont façonnés à la main et sont garnis de compote de pommes et de quartiers de pommes fraîches.",
+    "price": "23.70",
+    "photo": "chausson-aux-pommes.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Tarte au sucre",
+    "category": "Tartes",
+    "description": "Tarte traditionelle québécoise au sucre à la crème onctueux et riche en saveur. Chauffez-la légèrement et ajoutez-y une boule de glace à la vanille et vous ferez des heureux!",
+    "price": "9.95",
+    "photo": "tarte-au-sucre.jpeg"
+  }
+]

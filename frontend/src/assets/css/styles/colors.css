@@ -1,0 +1,158 @@
+/* ---------- VARIABLES ---------- */
+html {
+    --light_rosemauve: #F0E3EE;
+    --rosemauve: #E0C5DD;
+    --light_vert: #C7E1D2;
+    --light_marron: #F4F2EE;
+    --marron: #49402F;
+    --dark_marron: #201C14;
+    --white: #FFFFFF;
+}
+
+
+/* ---------- BASE - HERITAGE ---------- */
+a, button, form, label, input, textarea, select {
+    color: inherit;
+}
+
+/* ---------- COLOR CLASS ---------- */
+.texte-light_rosemauve {
+    color: var(--light_rosemauve) !important;
+}
+.texte-rosemauve {
+    color: var(--rosemauve) !important;
+}
+.texte-light_vert {
+    color: var(--light_vert) !important;
+}
+.texte-light_marron {
+    color: var(--light_marron) !important;
+}
+.texte-marron {
+    color: var(--marron) !important;
+}
+.texte-dark_marron {
+    color: var(--dark_marron) !important;
+}
+.texte-white {
+    color: var(--white) !important;
+}
+
+.texte-hover-light_rosemauve:hover {
+    color: var(--light_rosemauve) !important;
+}
+.texte-hover-rosemauve:hover {
+    color: var(--rosemauve) !important;
+}
+.texte-hover-light_vert:hover {
+    color: var(--light_vert) !important;
+}
+.texte-hover-light_marron:hover {
+    color: var(--light_marron) !important;
+}
+.texte-hover-marron:hover {
+    color: var(--marron) !important;
+}
+.texte-hover-dark_marron:hover {
+    color: var(--dark_marron) !important;
+}
+.texte-hover-white:hover {
+    color: var(--white) !important;
+}
+
+/* ---------- BACKGROUND COLOR CLASS ---------- */
+.bg-light_rosemauve {
+    background-color: var(--light_rosemauve) !important;
+}
+.bg-rosemauve {
+    background-color: var(--rosemauve) !important;
+}
+.bg-light_vert {
+    background-color: var(--light_vert) !important;
+}
+.bg-light_marron {
+    background-color: var(--light_marron) !important;
+}
+.bg-marron {
+    background-color: var(--marron) !important;
+}
+.bg-dark_marron {
+    background-color: var(--dark_marron) !important;
+}
+.bg-white {
+    background-color: var(--white) !important;
+}
+.bg-transparent {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.bg-hover-light_rosemauve:hover {
+    background-color: var(--light_rosemauve) !important;
+}
+.bg-hover-rosemauve:hover {
+    background-color: var(--rosemauve) !important;
+}
+.bg-hover-light_vert:hover {
+    background-color: var(--light_vert) !important;
+}
+.bg-hover-light_marron:hover {
+    background-color: var(--light_marron) !important;
+}
+.bg-hover-marron:hover {
+    background-color: var(--marron) !important;
+}
+.bg-hover-dark_marron:hover {
+    background-color: var(--dark_marron) !important;
+}
+.bg-hover-white:hover {
+    background-color: var(--white) !important;
+}
+.bg-hover-transparent {
+    background-color: transparent !important;
+}
+
+/* ---------- BORDER COLOR CLASS ---------- */
+.border-rosemauve {
+    border-color: var(--rosemauve) !important;
+}
+.border-light_rosemauve {
+    border-color: var(--light_rosemauve) !important;
+}
+.border-light_vert {
+    border-color: var(--light_vert) !important;
+}
+.border-light_marron {
+    border-color: var(--light_marron) !important;
+}
+.border-marron {
+    border-color: var(--marron) !important;
+}
+.border-dark_marron {
+    border-color: var(--dark_marron) !important;
+}
+.border-white {
+    border-color: var(--white) !important;
+}
+
+.border-hover-rosemauve:hover {
+    border-color: var(--rosemauve) !important;
+}
+.border-hover-light_rosemauve:hover {
+    border-color: var(--light_rosemauve) !important;
+}
+.border-hover-light_vert:hover {
+    border-color: var(--light_vert) !important;
+}
+.border-hover-light_marron:hover {
+    border-color: var(--light_marron) !important;
+}
+.border-hover-marron:hover {
+    border-color: var(--marron) !important;
+}
+.border-hover-dark_marron:hover {
+    border-color: var(--dark_marron) !important;
+}
+.border-hover-white:hover {
+    border-color: var(--white) !important;
+}

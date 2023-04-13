@@ -1,0 +1,69 @@
+/* ---------- FLEX ---------- */
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.flex.egal > * {
+    flex: 1;
+}
+
+/* ---------- GRILLE ---------- */
+.grille-sm {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.grille-lg {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+/* ---------- ESPACEMENT ---------- */
+.gap-mini {
+    gap: 10px;
+}
+.gap-trespetit {
+    gap: 20px;
+}
+.gap-petit {
+    gap: 30px;
+}
+.gap-normal {
+    gap: 40px;
+}
+.gap-moyen {
+    gap: 60px;
+}
+.gap-large {
+    gap: 80px;
+}
+
+/* ---------- ALIGNEMENT ---------- */
+.align-center {
+    align-items: center !important;
+}
+.align-baseline {
+    align-items: baseline !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
